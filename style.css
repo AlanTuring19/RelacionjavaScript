@@ -1,0 +1,195 @@
+@font-face {
+    font-family: 'letra1';
+    src: url(/fonts/Cheveuxdange.ttf);
+}
+:root {
+    --bgcolor1: #673ab7;
+    --bgcolor2: #ad18c7;
+    --bgcolor3: #3f51b5;
+    --bgcolor4: #2ee49b;
+    --bgcolor5: #054f7d;
+}
+
+
+:root {
+    --navTextcolor: #fff;
+    --navTextcolorHover: #ccc;
+}
+
+header {
+    background: black;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    font-family: letra1;
+}
+
+.wrapper {
+    padding: 10px !important;
+    background: #000 !important;
+    height: 100vh;
+}
+
+.navbar {
+    padding: 5px;
+    background-position: 0 0;
+    background: linear-gradient(to right, var(--bgcolor1), var(--bgcolor2), var(--bgcolor3), var(--bgcolor4), var(--bgcolor4));
+    background-size: 300%;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-name: menugradientanimation;
+    margin-bottom: 70px;
+}
+
+.nav-link {
+    color: var(--navTextcolor) !important;
+}
+
+.nav-link:hover {
+    color: var(--navTextcolorHover) !important;
+    text-decoration: underline;
+}
+
+.btn-custom {
+    color: white !important; 
+    background-color: rgb(117, 155, 222) !important; 
+    border: 1px solid rgb(103, 157, 198) !important; 
+    font-family: letra1;
+}
+
+.btn-custom:hover {
+    background-color: #4b849f !important; 
+}
+
+@keyframes menugradientanimation {
+    0% {
+        background-position: 0 0;
+    }
+    25% {
+        background-position: 50% 0;
+    }
+    50% {
+        background-position: 90% 0;
+    }
+    60% {
+        background-position: 60%;
+    }
+    80% {
+        background-position: 40%;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.card {
+    border-color: black !important;
+    padding: 140px;
+    margin: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 400px;
+    text-align: center;
+}
+
+.card2 {
+    border-color: black !important;
+    padding: 140px;
+    margin: 0 auto 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 400px;
+    text-align: center;
+}
+
+.card2 button {
+    padding: 8px 16px;
+    background-color: #7f0fe7;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    align-self: center; 
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card button {
+    padding: 8px 16px;
+    background-color: #7f0fe7;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    align-self: center; 
+    position: absolute;
+    bottom: 15px;
+    right: 150px; 
+}
+
+.card button:hover {
+    background-color: #aa4ef0;
+}
+
+h2 {
+    font-family: letra1;
+    font-size: 80px;
+    color: #0a0a0a;
+    text-align: center;
+}
+
+.relacion1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.relacion2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+
+.card:nth-child(1) {
+    background-image: url("/img/ejercicio2_foto.png");
+}
+
+.card:nth-child(2) {
+    background-image: url("/img/ejercicio3_foto.png");
+}
+
+.card:nth-child(3) {
+    background-image: url("/img/ejercicio4_foto.jpg");
+}
+
+.card:nth-child(4) {
+    background-image: url("/img/ejercicip5_foto.jpg");
+}
+
+.card:nth-child(5) {
+    background-image: url("/img/Ejercicio6_foto.jpg");
+}
+
+.card:nth-child(6) {
+    background-image: url("/img/Ejercicio7_foto.png");
+}
+
+.card:nth-child(7) {
+    background-image: url("/img/Ejericicio8_foto.jpg");
+}
+
+.card:nth-child(8) {
+    background-image: url("/img/ejercicio9_foto.png");
+}
+
+.card2:nth-child(1) {
+    background-image: url("/img/ejercicio10_foto.jpg");
+}
+

@@ -1,0 +1,113 @@
+body{
+    background-image: url("/img/dni-espanol.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    height: 100vh; 
+}
+
+h1{
+    text-align: center;
+    margin-top: 80px;
+    color: black;
+}
+
+#dniForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 300px; 
+    margin: 0 auto; 
+    color: white;
+    font-size: 20px;
+}
+
+input {
+    padding: 10px;
+    width: 150px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#results {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 auto; 
+    margin-top: 0px;
+    align-items: center;
+    width: 320px;
+    color: black;
+    font-size: 20px;
+}
+
+form button {
+    margin-top: 15px;
+    width: 140px;
+    height: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    
+} 
+
+form button:hover {
+    background-color: #61e8b2;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+
+@media screen and (max-width: 768px) {
+    /* Estilos para pantallas más pequeñas */
+    #dniForm {
+        padding: 10px;
+    }
+    
+    input[type="number"] {
+        width: 50%;
+    }
+    
+    h1{
+        margin-top: 180px;
+    }
+
+
+    button[type="submit"] {
+        padding: 8px 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Estilos para pantallas aún más pequeñas */
+    #dniForm {
+        padding: 5px;
+    }
+    
+    input[type="number"] {
+        width: 50%;
+    }
+
+    h1{
+        margin-top: 180px;
+    }
+
+    button[type="submit"] {
+        padding: 6px 12px;
+    }
+}

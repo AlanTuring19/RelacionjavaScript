@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio2</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/img/javascript-logo-escudo.png">
+</head>
+<body>
+    <h1>Calcular Radio de una Circunferencia: </h1>
+    <form id="circleForm">
+        <label for="radius">Radio:</label>
+        <input type="number" id="radius" name="radius" required>
+        <div id="error-message" style="color: red;"></div>
+        <br>
+        <button type="submit">Calcular</button>
+    </form>
+    <div id="results">
+        <h3>Resultados:</h3>
+        <p id="circumference"></p>
+        <p id="area"></p>
+        <p id="volume"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

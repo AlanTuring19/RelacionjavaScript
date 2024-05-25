@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio3</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/img/javascript-logo-escudo.png">
+</head>
+<body>
+    <h1>Calcular tipo de Triángulo</h1>
+    <form id="triangleForm">
+        <label for="lado1">Primer lado del triangulo: </label>
+        <input type="number" id="lado1" name="lado1" required>
+        <br>
+        <label for="lado2">Segundo lado del triangulo: </label>
+        <input type="number" id="lado2" name="lado2" required>
+        <br>
+        <label for="lado3">Tercer lado del triangulo: </label>
+        <input type="number" id="lado3" name="lado3" required>
+        <div id="error-message" style="color: red;"></div>
+        <br>
+        <button type="submit">Calcular</button>
+    </form>
+
+    <div id="results">
+        <h3>Resultados:</h3>
+        <p id="tipoTriangulo"></p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

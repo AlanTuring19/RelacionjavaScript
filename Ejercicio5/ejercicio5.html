@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/img/javascript-logo-escudo.png">
+</head>
+<body>
+    <h1>Calcular Mayúsculas y Minúsculas</h1>
+    <form id = "palabrasForm">
+        <label for="frase">Introduzca una frase o palabra: </label>
+        <input type="text" id="palabra" name="palabra" required>
+        <div id="error-message" style="color: red;"></div>
+        <br>
+        <button type="submit">Calcular</button>
+    </form>
+
+    <div id="results">
+        <h3>Resultados: </h3>
+        <p id="resultado"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
